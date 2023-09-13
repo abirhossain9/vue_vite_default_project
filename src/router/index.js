@@ -4,15 +4,8 @@ import Login from "@/views/Login.vue"
 
 
 const routes = [
-  {
-    path: '/', 
-    component: TaskIndex, 
-    name: 'tasks',
-    children: [
-      { path: 'login', component: Login, name: 'login' }
-    ]
-  }
-
+    { path: '/', component: TaskIndex },
+    { path: '/login', component: Login },
   ]
 const router = createRouter({
     routes,
